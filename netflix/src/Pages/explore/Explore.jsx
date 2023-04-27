@@ -1,12 +1,12 @@
-   import React from 'react'
-   
-   const explore = () => {
-     return (
-       <div>
-         
-       </div>
-     )
-   }
-   
-   export default explore
-            
+ import React from 'react'
+ 
+ const Explore = () => {
+   return (
+     <div>
+       
+     </div>
+   )
+ }
+ 
+ export default Explore
+ 
