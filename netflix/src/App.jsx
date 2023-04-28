@@ -9,6 +9,7 @@ import Details from './Pages/details/Details';
 import SearchResult from './Pages/searchResult/SearchResult';
 import PageNotFound from './Pages/404/PageNotFound';
 import Explore from './Pages/explore/Explore';
+import Header from './components/header/Header';
 
 function App() {
   const dispatch = useDispatch();
@@ -33,13 +34,13 @@ function App() {
         profile: res.images.secure_base_url +
         "original",
       }
-      dispatch(getApiConfiguration(
-        res));
+      dispatch(getApiConfiguration(url));
     });
    };
 
   return (
    <BrowserRouter>
+   <Header/>
    <Routes>
   
     <Route path='/' element={<Home />}/>
