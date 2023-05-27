@@ -7,7 +7,7 @@ import { fetchDataFromApi } from "../../utils/api";
 import Spinner from "../../components/spinner/Spinner";
 import MovieCard from "../../components/movieCard/movieCard";
 import useFetch from "../hooks/useFetch";
-import ContentWrapper from "../../components/contentWrapper/contentWrapper";
+import ContentWrapper from "../../components/contentWrapper/ContentWrapper";
 
 let filters = {};
 
