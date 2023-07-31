@@ -6,7 +6,7 @@ import {
 import PosterFallback from "../../assets/no-poster.png";
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import ContentWrapper from '../contentWrapper/contentWrapper';
+import ContentWrapper from '../contentWrapper/ContentWrapper.jsx';
 import Img from '../lazyLoadImage/Img';
 import dayjs from 'dayjs';
 import "./Carousel.scss"
