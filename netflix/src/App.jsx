@@ -5,20 +5,18 @@ import './App.scss';
 import { fetchDataFromApi } from './utils/api';
 import HomeSlice, { getApiConfiguration, getGenres } from './Store/HomeSlice';
 import Home from './Pages/home/Home';
-// import Details from './Pages/details/Details';
+import Details from './Pages/details/Details';
 import SearchResult from './Pages/searchResult/SearchResult';
 import PageNotFound from './Pages/404/PageNotFound';
 import Explore from './Pages/explore/Explore';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
-import Details from './Pages/details/Details';
 
 function App() {
   const dispatch = useDispatch();
-  const {url} = useSelector((state)=> 
-  state.home);
+  const {url} = useSelector((state)=>   state.home);
 
-  // console.log(url);
+  console.log(url);
 
  useEffect(()=>{
     fetchApiConfig();
